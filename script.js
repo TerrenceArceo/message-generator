@@ -24,3 +24,10 @@ const messages = {
     ]
 }
 
+const { message1, message2, message3 } = messages
+
+const messagePicker = arr => {
+    return arr[Math.floor(Math.random() * arr.length)]
+}
+
+console.log(`${messagePicker(message1)} ${messagePicker(message2)} ${messagePicker(message3)}`)
